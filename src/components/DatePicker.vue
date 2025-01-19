@@ -36,6 +36,7 @@
 <style scoped>
     input[type="date"] {
         width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
     }
 </style>
