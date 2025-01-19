@@ -13,7 +13,7 @@ import Calculator from './components/Calculator.vue'
 
 <style scoped>
 .logo {
-  height: 6em;
+  height: 50px;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;

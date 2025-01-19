@@ -12,24 +12,32 @@
         Number of days: <strong>{{ numOfDays }}</strong>
       </div>
     </div>
-  </template>
-  
-  <script setup>
-  defineProps({
-    insuranceType: String,
-    periodStart: String,
-    periodEnd: String,
-    numOfDays: Number
-  });
-  
-  const emit = defineEmits(['update:periodStart', 'update:periodEnd']);
-  
-  const updatePeriodStart = (newValue) => {
-    emit('update:periodStart', newValue);
-  };
-  
-  const updatePeriodEnd = (newValue) => {
-    emit('update:periodEnd', newValue);
-  };
-  </script>
+</template>
+
+<script setup>
+    defineProps({
+        insuranceType: String,
+        periodStart: String,
+        periodEnd: String,
+        numOfDays: Number
+    });
+
+    const emit = defineEmits(['update:periodStart', 'update:periodEnd']);
+
+    const updatePeriodStart = (newValue) => {
+        emit('update:periodStart', newValue);
+    };
+
+    const updatePeriodEnd = (newValue) => {
+        emit('update:periodEnd', newValue);
+    };
+</script>
+
+<style scoped>
+    input[type="date"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+</style>
+
   
